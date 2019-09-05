@@ -21,7 +21,7 @@ public class LoginTest {
 	public void doLogin(){
 		
 		driver.get("https://www.amazon.in/");
-		
+		System.out.println("Launched Amazon");
 		// Browser is still open
 	}
 	
