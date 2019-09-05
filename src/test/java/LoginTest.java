@@ -1,5 +1,7 @@
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
@@ -11,8 +13,8 @@ public class LoginTest {
 	@BeforeSuite
 	public void setUp(){
 		
-		driver = new FirefoxDriver();
-		
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
 	}
 	
 	@Test
@@ -20,7 +22,7 @@ public class LoginTest {
 		
 		driver.get("https://www.amazon.in/");
 		
-		// broswer is still open
+		// Browser is still open
 	}
 	
 	
