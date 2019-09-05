@@ -1,3 +1,5 @@
+import java.io.File;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 import org.openqa.selenium.WebDriver;
@@ -13,7 +15,8 @@ public class LoginTest {
 	@BeforeSuite
 	public void setUp(){
 		
-		WebDriverManager.chromedriver().setup();
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\USER\\Downloads\\chromedriver_2.37.exe");
+		//WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 	}
 	
