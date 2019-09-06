@@ -23,6 +23,7 @@ public class LoginTest {
 		driver.get("https://www.amazon.in/");
 		System.out.println("Launched Amazon");
 		// Browser is still open
+		driver.quit();
 	}
 	
 	
